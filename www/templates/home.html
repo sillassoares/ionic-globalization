@@ -1,0 +1,25 @@
+<ion-view title="{{'TITLE' | translate}}" id="page1">
+  <ion-content padding="true" class="has-header">
+    <form id="home-form1" class="list">
+      <label class="item item-select" id="home-select1">
+        <span class="input-label">{{ 'SELECT' | translate }}</span>
+        <select ng-change="changeLanguage(lang)" ng-model="lang" ng-options="lang as lang.label for lang in langOptions">
+        </select>
+      </label>
+
+      <div class="card">
+        <div class="item item-divider">
+          <p translate="VARIABLE_REPLACEMENT" translate-values="{name: name}"></p>
+        </div>
+        <div class="item item-text-wrap">
+          {{ 'TEXT' | translate}}
+        </div>
+
+        <div class="item item-text-wrap">
+          {{ 1000 | currency}}
+        </div>
+      </div>
+
+    </form>
+  </ion-content>
+</ion-view>

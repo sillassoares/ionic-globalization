@@ -1,0 +1,6 @@
+{
+  "TITLE": "Home",
+  "SELECT": "Language",
+  "TEXT": "Testing text",
+  "VARIABLE_REPLACEMENT": "Hello {{name}}"
+}
