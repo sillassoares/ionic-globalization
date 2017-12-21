@@ -31,8 +31,6 @@ angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.directives
       navigator.globalization.getLocaleName(function (locale) {
         $translate.use(locale.value);
         tmhDynamicLocale.set(locale.value);
-        console.log(locale.value);
-        console.log(JSON.stringify(locale));
       })
     }
   });

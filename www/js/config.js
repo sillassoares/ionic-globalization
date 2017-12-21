@@ -3,6 +3,8 @@ angular.module('app')
 
   tmhDynamicLocaleProvider.localeLocationPattern('js/locales/angular-locale_{{locale}}.js');
 
+  //tmhDynamicLocaleProvider.defaultLocale('pt-br');
+
   $translateProvider
   .useStaticFilesLoader({
         prefix: 'i18n/',

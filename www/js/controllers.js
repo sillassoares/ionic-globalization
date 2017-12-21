@@ -1,6 +1,6 @@
 angular.module('app.controllers', [])
 
-.controller('homeCtrl', ['$scope', '$stateParams', '$translate', function ($scope, $stateParams, $translate) {
+.controller('homeCtrl', ['$scope', '$stateParams', '$translate', 'tmhDynamicLocale', function ($scope, $stateParams, $translate, tmhDynamicLocale) {
 
   $scope.name = 'Usuário';
 
@@ -14,8 +14,8 @@ angular.module('app.controllers', [])
 
   $scope.changeLanguage = function (lang) {
     $translate.use(lang.value);
+    tmhDynamicLocale.set(lang.label);
   };
-
 
 }])
 
